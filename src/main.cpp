@@ -46,7 +46,7 @@ class DataSaver {
                     int8_t *_VBUS = (int8_t*)(data + 15);
 
                     int CAN_ID = *_CAN_ID;
-                    int VBUS = *_VBUS - 127;
+                    int VBUS = *_VBUS;
                     float CURRENT = *_CURRENT / 100.0;
                     long ENCODERPOSITION = *_ENCODERPOSITION;
                     int ENCODERVELOCITY = *_ENCODERVELOCITY;
